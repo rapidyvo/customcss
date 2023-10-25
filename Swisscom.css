@@ -42,7 +42,7 @@
   --background-extra-accent: rgb(245, 166, 35);
   --background-dark: rgb(19, 49, 84);
   --background-info: rgba(13, 147, 242, 0.12);
-  --background-error:rgba(184, 46, 69, 0.12);;
+  --background-error:rgba(184, 46, 69, 0.12);
   --background-success: rgba(27, 152, 120, 0.12);
   --border-default: rgba(255, 255, 255, 0.06);
   --border-accent: #0D93F2;
@@ -136,20 +136,20 @@ line-height: 20px;
 }
 
 /* Hero Header */
-	.Main .HomePage header {
-		background: linear-gradient(30deg,#87133f,#096cc1) !important;
+.Main .HomePage header {
+    background: linear-gradient(30deg,#87133f,#096cc1) !important;
     background-size: 80% auto !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-	}
+}
 
 .HomePage .HeaderContent.center-content {
     width: 80%;
 
     /* Necessary to override default rule */
-		max-width: 80%;
+    max-width: 80%;
     /* Adjusting the first 30px defintion is top and bottom and will make hero taller, the second 60px is left and right and will just add the white space */
-		padding: 30px 60px;
+    padding: 30px 60px;
 }
 
 
