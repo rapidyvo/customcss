@@ -1,0 +1,415 @@
+  /* COLOURS */
+:root {
+  --content-primary: #000000;
+  --content-secondary: rgba(0, 0, 0, 0.6);
+  --content-secondary-light: rgba(255, 255, 255, 0.6);
+  --content-tertiary: rgba(0, 0, 0, 0.28);
+  --content-tertiary-light: rgba(255, 255, 255, 0.28);
+  --content-accent: #0D93F2;
+  --content-error: #E8304F;
+  --content-success: #20AC89;
+  --content-warning: #AD961F;
+  --background-primary: #ffffff;
+  --background-secondary: #F4F4F5;
+  --background-tertiary: #E1E2E4;
+  --background-accent: #0D93F2;
+  --background-extra-accent: rgb(245, 166, 35);
+  --background-dark: rgb(19, 49, 84);
+  --background-disabled: rgba(19, 49, 84, 0.2);
+  --background-info: rgba(13, 147, 242, 0.12);
+  --background-error: rgba(232, 48, 79, 0.12);
+  --background-success: rgba(32, 172, 137, 0.12);
+  --border-default: rgba(0, 0, 0, 0.08);
+  --border-accent: #0D93F2;
+  --border-error: #E8304F;
+  --border-success: #20AC89;
+}
+
+.dark {
+  --content-primary: rgba(255, 255, 255, 0.87);
+  --content-secondary: rgba(255, 255, 255, 0.6);
+  --content-secondary-light: rgba(255, 255, 255, 0.6);
+  --content-tertiary: rgba(255, 255, 255, 0.28);
+  --content-tertiary-light: rgba(255, 255, 255, 0.28);
+  --content-accent: #0D93F2;
+  --content-error: #B82E45;
+  --content-success: #1B9878;
+  --content-warning: #AD961F;
+  --background-primary: #1D1D20;
+  --background-secondary: #27272B;
+  --background-tertiary: #303136;
+  --background-accent: rgba(13, 147, 242, 0.12);
+  --background-extra-accent: rgb(245, 166, 35);
+  --background-dark: rgb(19, 49, 84);
+  --background-info: rgba(13, 147, 242, 0.12);
+  --background-error:rgba(184, 46, 69, 0.12);;
+  --background-success: rgba(27, 152, 120, 0.12);
+  --border-default: rgba(255, 255, 255, 0.06);
+  --border-accent: #0D93F2;
+  --border-error: #B82E45;
+  --border-success: #1B9878;
+}
+
+/* TYPOGRAPHY */
+:root,
+html,
+body,
+* {
+font-family: 'Inter', sans-serif;
+--font-family-sans-serif: 'Inter', sans-serif;
+}
+
+h1, .title {
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+}
+
+h2, .headline {
+font-style: normal!important;
+font-weight: normal!important;
+font-size: 24px!important;
+line-height: 32px!important;
+}
+
+h4 {
+font-size: 20px;
+color: var(--content-accent);
+font-style: normal;
+font-weight: normal;
+line-height: 24px;
+}
+
+.body2, p, span, li, div {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+}
+
+.body1 {
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+}
+
+.caption {
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+}
+
+.caps {
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+.bold {
+font-weight: 600;
+}
+
+.b {
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+}
+
+/*         CHANGES        */
+/* Image */
+.css-kdnsan a img{
+ height:50px;
+}
+
+/* Heading */
+.HeroCover h1{
+ font-weight:700 !important;
+ font-size:50px !important;
+}
+.HeroCover h3{
+ font-size:32px !important;
+}
+
+/* Create a button out of view all for the Collections */
+a.ViewAllLink {
+    font-size: 12px;
+    font-stretch: condensed;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+
+    padding: 2px;
+    box-shadow: 0px 0px 5px lightblue;
+}
+
+section.Categories {
+  padding-top: 10px;
+  padding-left:10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+  border: 0px solid grey;
+  border-radius: 10px;
+  margin-right: 35px;
+  box-shadow: 0px 0px 10px rgb(2 48 68 / 60%);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark section.Categories {
+  background-color: rgba(2, 48, 68, 0.8);
+}
+
+section.Collections {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  border: 0px solid grey;
+  margin-right: 35px;
+  box-shadow: 0px 0px 10px rgb(163 137 137 / 60%);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark section.Collections {
+  background-color: rgba(2, 48, 68, 0.8);
+}
+
+
+.null .CategoryCard {
+  /* border: 1.5px solid rgba(0,0,0,0.09) !important; */
+  box-shadow: 0px 0px 10px rgba(0, 42, 78, 0.55);
+}
+
+.dark .CategoryCard {
+  box-shadow: 0px 0px 10px rgb(59, 108, 157, 0.9);
+}
+
+.null .CollectionCard {
+  /* border: 1.5px solid rgba(0,0,0,0.09) !important; */
+  box-shadow: 0px 0px 10px rgba(0, 42, 78, 0.55);
+  border-radius: 8px;
+}
+
+.dark .CollectionCard {
+  box-shadow: 0px 0px 10px rgb(59 108 157 / 90%);
+  border-radius: 8px;
+}
+
+/* API product card */
+.null .ProductCard {
+  height: 220px !important;
+  /* box-shadow: 0px 4px 10px rgb(0 42 78 / 55%); */
+  /* box-shadow: 0px 0px 10px rgb(0 42 78 / 55%); */
+  box-shadow: 0px 0px 10px rgba(38, 111, 224, 0.76);
+
+  /* box-shadow: 0px 0px 10px rgb(255 140 0 / 44%); */
+  margin-right: 9px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.dark .ProductCard {
+  /* box-shadow: 0px 4px 10px rgb(0, 42, 78, 0.50); */
+  box-shadow: 0px 0px 10px rgba(38, 111, 224, 1);
+  height: 220px !important;
+  margin-right: 9px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.null .CategoryCard {
+  /* border: 1.5px solid rgba(0,0,0,0.09) !important; */
+  box-shadow: 0px 0px 10px rgba(0, 42, 78, 0.55);
+}
+
+.dark .CategoryCard {
+  box-shadow: 0px 0px 10px rgb(59, 108, 157, 0.9);
+}
+
+.SpotlightCard {
+    box-shadow: 0px 0px 10px rgba(38, 111, 224, 0.76);
+    max-height: 225px;
+    max-width: 200px;
+}
+
+.HomePage .HeaderContent h1 {
+    font-weight: 600;
+    text-align: center;
+    color: var(--brand-color-light);
+    text-shadow: 1px 1px 1px black;
+}
+
+.HomePage .HeaderContent h3 {
+    font-weight: 600;
+    text-align: center;
+    color: var(--brand-color-light);
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Header */
+.Main .HomePage header{
+ background-color:transparent !important;
+}
+/* Home page */
+#__nuxt #__layout .Page .Main .HomePage{
+ background-image:url("https://raw.githubusercontent.com/rapidyvo/animatedsvgs/main/SlowStarsTurning.svg") no-repeat !important;
+ background-size: cover !important;
+ background-attachment: fixed;
+}
+
+/********* CHANGES AFTER BACKGROUND *********/
+
+/* Product card */
+.CollectionCarouselList div .ProductCard{
+ background-color:rgba(131,241,239,0.83);
+}
+/* Product card */
+.ItemGrid .ItemCard .ProductCard{
+ background-color:rgba(131,241,239,0.83);
+}
+/* Card content overlay */
+.CollectionCarouselList div .CardContentOverlay{
+ box-shadow:0px 0px 12px -12px #ffffff inset;
+}
+/* Card content overlay */
+.ItemGrid .ItemCard .CardContentOverlay{
+ box-shadow:0px 0px 12px -12px #ffffff inset;
+}
+
+/* Span Tag */
+.SideDiscoveryMenu .Categories span{
+ color:#ffffff;
+ font-size:22px;
+}
+
+/* Link */
+.Categories ul a{
+ color:#83f1ef;
+}
+
+/* Link */
+.CollectionCarouselList .CollectionCarousel .flexContainer a{
+ color:#83f1ef;
+}
+
+/* Flex container */
+.CollectionCarouselList .CollectionCarousel .flexContainer{
+ color:#83f1ef;
+}
+
+/* Api name */
+.CollectionCarouselList div .ApiName{
+ color:#000000;
+}
+
+/* Header */
+.Main .CollectionPage header{
+ background-color:transparent;
+}
+.dark .Main .CollectionPage header{
+ background-color:transparent;
+}
+
+.dark /* Header */
+.Main .CollectionsPage header{
+ background-color:transparent;
+}
+/* Heading */
+.CollectionsPage .HeaderTitle h2{
+ color:#ffffff;
+}
+/* Header title */
+.CollectionPage header .HeaderTitle{
+ color:#ffffff;
+}
+
+/* Span Tag */
+.ItemGrid .ItemCard span{
+ color:#ffffff;
+}
+/* Bold */
+div > div > div > div > .bold{
+ color:#ffffff;
+}
+
+/* Empty state icon */
+#category-search .REmptyState .EmptyStateIcon{
+ color:#ffffff;
+}
+
+/* Paragraph */
+.MarkdownView .MarkdownPreview p{
+ color:#ffffff;
+}
+
+.MarkdownPreview {
+  color: white;
+}
+
+/* Body2 */
+#main-content div .body2{
+ color:#ffffff;
+}
+/* Header content */
+.CategoriesPage header .HeaderContent{
+ color:#f9f9f9;
+}
+
+/* Collection card */
+.ItemGrid .ItemCard .CollectionCard{
+ color:#f7f7f7;
+}
+
+/* Heading */
+#main-content div h3{
+ color:#f9f9f9;
+}
+
+/* Header */
+.dark .Main .CategoriesPage header{
+ background-color:transparent;
+}
+/* Header */
+.Main .CategoryPage header{
+ background-color:transparent;
+}
+/* Heading */
+.CategoryPage .HeaderTitle h2{
+ color:#f7f7f7;
+}
+
+/* Main */
+#__layout .Page .Main{
+ background-image:url("https://raw.githubusercontent.com/rapidyvo/animatedsvgs/main/SlowStarsTurning.svg");
+ background-size: cover !important;
+ background-attachment: fixed;
+}
+
+/* Span Tag */
+.SideDiscoveryMenu .Collections span{
+ color:#ffffff;
+ font-size:22px;
+}
+
+/* Link */
+.Collections ul a{
+ color:#83f1ef;
+}
+
+/* Link */
+.CollectionCarouselList .CollectionCarousel .flexContainer a{
+ background-color:#ffffff;
+ color:#2c3e50 !important;
+}
+/* Heading */
+.HeroCover h1{
+ font-family:'Arial Black','Arial Bold',Gadget,sans-serif;
+}
+
